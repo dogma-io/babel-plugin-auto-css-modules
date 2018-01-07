@@ -16,6 +16,16 @@ npm install babel-plugin-auto-css-modules
 yarn add babel-plugin-auto-css-modules
 ```
 
+
+## Usage
+
+In your Babel configuration include:
+```js
+module.exports = {
+  "plugins": ["babel-plugin-auto-css-modules"],
+}
+```
+
 [cov-img]: https://img.shields.io/codecov/c/github/dogma-io/babel-plugin-auto-css-modules.svg "Code Coverage"
 [cov-url]: https://codecov.io/gh/dogma-io/babel-plugin-auto-css-modules
 
