@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-auto-css-modules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automatically import same name CSS modules.",
   "main": "lib/index.js",
   "files": [
@@ -17,6 +17,16 @@
     "url": "git+ssh://git@github.com/dogma-io/vmdom.git"
   },
   "keywords": [
+    "auto",
+    "automatic",
+    "babel",
+    "css",
+    "import",
+    "module",
+    "modules",
+    "plugin",
+    "require",
+    "webpack"
   ],
   "author": "Matthew Dahl <https://github.com/dogma-io>",
   "license": "MIT",
