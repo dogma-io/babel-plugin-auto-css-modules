@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-auto-css-modules",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Automatically import same name CSS modules.",
   "main": "lib/index.js",
   "files": [
@@ -10,7 +10,7 @@
     "build": "nodely -s ./src -o ./lib",
     "postpublish": "codecov",
     "prepublishOnly": "npm run build",
-    "test": "lintly src && flow && jest"
+    "test": "lintly src && flow && npm run build && jest"
   },
   "repository": {
     "type": "git",
@@ -35,18 +35,23 @@
   },
   "homepage": "https://github.com/dogma-io/vmdom#readme",
   "devDependencies": {
+    "@babel/core": "7.0.0-beta.36",
+    "@babel/preset-env": "7.0.0-beta.36",
+    "@babel/preset-react": "7.0.0-beta.36",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "22.0.4",
     "codecov": "3.0.0",
     "flow-bin": "0.63.1",
     "jest-cli": "22.0.4",
     "lintly": "0.0.16",
-    "nodely": "0.0.21"
+    "nodely": "0.0.22"
   },
 
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/**/__tests__/**/*.js"
+      "lib/**/*.js",
+      "!lib/**/__tests__/**/*.js"
     ],
     "coverageReporters": [
       "json-summary",

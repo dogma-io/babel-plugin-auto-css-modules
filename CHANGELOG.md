@@ -1,3 +1,8 @@
+## 0.0.4
+
+*   Added tests.
+*   Upgraded to nodely using Babel 7 beta.
+
 ## 0.0.3
 
 *   Added usage documentation to `README.md`.

@@ -1,0 +1,2349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel-plugin-auto-css-modules should insert CSS import when CSS module exists with same name 1`] = `
+Object {
+  "ast": Node {
+    "comments": Array [],
+    "end": 19,
+    "loc": SourceLocation {
+      "end": Position {
+        "column": 0,
+        "line": 2,
+      },
+      "start": Position {
+        "column": 0,
+        "line": 1,
+      },
+    },
+    "program": Node {
+      "body": Array [
+        Object {
+          "_blockHoist": 3,
+          "expression": Object {
+            "arguments": Array [
+              Object {
+                "type": "StringLiteral",
+                "value": "./foo.css",
+              },
+            ],
+            "callee": Object {
+              "name": "require",
+              "type": "Identifier",
+            },
+            "type": "CallExpression",
+          },
+          "loc": undefined,
+          "type": "ExpressionStatement",
+        },
+        Node {
+          "end": 18,
+          "expression": Node {
+            "end": 18,
+            "left": Node {
+              "computed": false,
+              "end": 10,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 10,
+                  "line": 1,
+                },
+                "start": Position {
+                  "column": 0,
+                  "line": 1,
+                },
+              },
+              "object": Node {
+                "end": 6,
+                "loc": SourceLocation {
+                  "end": Position {
+                    "column": 6,
+                    "line": 1,
+                  },
+                  "identifierName": "global",
+                  "start": Position {
+                    "column": 0,
+                    "line": 1,
+                  },
+                },
+                "name": "global",
+                "start": 0,
+                "type": "Identifier",
+              },
+              "property": Node {
+                "end": 10,
+                "loc": SourceLocation {
+                  "end": Position {
+                    "column": 10,
+                    "line": 1,
+                  },
+                  "identifierName": "foo",
+                  "start": Position {
+                    "column": 7,
+                    "line": 1,
+                  },
+                },
+                "name": "foo",
+                "start": 7,
+                "type": "Identifier",
+              },
+              "start": 0,
+              "type": "MemberExpression",
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 18,
+                "line": 1,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 1,
+              },
+            },
+            "operator": "=",
+            "right": Node {
+              "end": 18,
+              "extra": Object {
+                "raw": "'baz'",
+                "rawValue": "baz",
+              },
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 18,
+                  "line": 1,
+                },
+                "start": Position {
+                  "column": 13,
+                  "line": 1,
+                },
+              },
+              "start": 13,
+              "type": "StringLiteral",
+              "value": "baz",
+            },
+            "start": 0,
+            "type": "AssignmentExpression",
+          },
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 18,
+              "line": 1,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 1,
+            },
+          },
+          "start": 0,
+          "type": "ExpressionStatement",
+        },
+      ],
+      "directives": Array [
+        Object {
+          "type": "Directive",
+          "value": Object {
+            "type": "DirectiveLiteral",
+            "value": "use strict",
+          },
+        },
+      ],
+      "end": 19,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 0,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 1,
+        },
+      },
+      "sourceType": "script",
+      "start": 0,
+      "type": "Program",
+    },
+    "start": 0,
+    "type": "File",
+  },
+  "code": "\\"use strict\\";
+
+require(\\"./foo.css\\");
+
+global.foo = 'baz';",
+  "map": null,
+  "metadata": Object {},
+  "options": Object {
+    "babelrc": false,
+    "cwd": "/Users/matthewdahl/github/babel-plugin-auto-css-modules",
+    "envName": "test",
+    "filename": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/foo.js",
+    "generatorOpts": Object {
+      "auxiliaryCommentAfter": undefined,
+      "auxiliaryCommentBefore": undefined,
+      "comments": true,
+      "compact": "auto",
+      "filename": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/foo.js",
+      "minified": undefined,
+      "retainLines": undefined,
+      "shouldPrintComment": undefined,
+      "sourceFileName": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/foo.js",
+      "sourceMapTarget": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/foo.js",
+      "sourceMaps": false,
+      "sourceRoot": undefined,
+    },
+    "parserOpts": Object {
+      "plugins": Array [
+        "jsx",
+        "jsx",
+      ],
+      "sourceFileName": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/foo.js",
+      "sourceType": "module",
+    },
+    "passPerPreset": false,
+    "plugins": Array [
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "base$0",
+        "manipulateOptions": undefined,
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-react/lib/index.js$0",
+        "manipulateOptions": [Function],
+        "options": Object {
+          "pragma": "React.createElement",
+          "pragmaFrag": "React.Fragment",
+          "throwIfNamespace": true,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "JSXAttribute": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "JSXElement": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "JSXFragment": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "JSXNamespacedName": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": Object {},
+          "_verified": Object {},
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-react/lib/index.js$1",
+        "manipulateOptions": [Function],
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-react/lib/index.js$2",
+        "manipulateOptions": undefined,
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "CallExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportDefaultDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$0",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "Program": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$1",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DoWhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "WhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$2",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$3",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchCase": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$4",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DoWhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "VariableDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "WhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$5",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportDefaultDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$6",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$7",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "AssignmentExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportNamedDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "VariableDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$8",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$9",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$10",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "FunctionExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "ObjectProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$11",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "NumericLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "StringLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$12",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$13",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$14",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$15",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrayExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CallExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NewExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$16",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "RegExpLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$17",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": [Function],
+        "visitor": Object {
+          "TaggedTemplateExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TemplateLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$18",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DoWhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "UnaryExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "WhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$19",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "RegExpLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "transform-new-target",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "MetaProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "regenerator-transform",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$22",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "AssignmentExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BinaryExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$23",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$24",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "RegExpLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+    ],
+    "presets": Array [],
+  },
+}
+`;
+
+exports[`babel-plugin-auto-css-modules should not insert CSS import when CSS module does not exist with same name 1`] = `
+Object {
+  "ast": Node {
+    "comments": Array [],
+    "end": 20,
+    "loc": SourceLocation {
+      "end": Position {
+        "column": 0,
+        "line": 2,
+      },
+      "start": Position {
+        "column": 0,
+        "line": 1,
+      },
+    },
+    "program": Node {
+      "body": Array [
+        Node {
+          "end": 19,
+          "expression": Node {
+            "end": 19,
+            "left": Node {
+              "computed": false,
+              "end": 10,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 10,
+                  "line": 1,
+                },
+                "start": Position {
+                  "column": 0,
+                  "line": 1,
+                },
+              },
+              "object": Node {
+                "end": 6,
+                "loc": SourceLocation {
+                  "end": Position {
+                    "column": 6,
+                    "line": 1,
+                  },
+                  "identifierName": "global",
+                  "start": Position {
+                    "column": 0,
+                    "line": 1,
+                  },
+                },
+                "name": "global",
+                "start": 0,
+                "type": "Identifier",
+              },
+              "property": Node {
+                "end": 10,
+                "loc": SourceLocation {
+                  "end": Position {
+                    "column": 10,
+                    "line": 1,
+                  },
+                  "identifierName": "bar",
+                  "start": Position {
+                    "column": 7,
+                    "line": 1,
+                  },
+                },
+                "name": "bar",
+                "start": 7,
+                "type": "Identifier",
+              },
+              "start": 0,
+              "type": "MemberExpression",
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 19,
+                "line": 1,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 1,
+              },
+            },
+            "operator": "=",
+            "right": Node {
+              "end": 19,
+              "extra": Object {
+                "raw": "'spam'",
+                "rawValue": "spam",
+              },
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 19,
+                  "line": 1,
+                },
+                "start": Position {
+                  "column": 13,
+                  "line": 1,
+                },
+              },
+              "start": 13,
+              "type": "StringLiteral",
+              "value": "spam",
+            },
+            "start": 0,
+            "type": "AssignmentExpression",
+          },
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 19,
+              "line": 1,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 1,
+            },
+          },
+          "start": 0,
+          "type": "ExpressionStatement",
+        },
+      ],
+      "directives": Array [],
+      "end": 20,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 0,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 1,
+        },
+      },
+      "sourceType": "module",
+      "start": 0,
+      "type": "Program",
+    },
+    "start": 0,
+    "type": "File",
+  },
+  "code": "global.bar = 'spam';",
+  "map": null,
+  "metadata": Object {},
+  "options": Object {
+    "babelrc": false,
+    "cwd": "/Users/matthewdahl/github/babel-plugin-auto-css-modules",
+    "envName": "test",
+    "filename": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/bar.js",
+    "generatorOpts": Object {
+      "auxiliaryCommentAfter": undefined,
+      "auxiliaryCommentBefore": undefined,
+      "comments": true,
+      "compact": "auto",
+      "filename": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/bar.js",
+      "minified": undefined,
+      "retainLines": undefined,
+      "shouldPrintComment": undefined,
+      "sourceFileName": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/bar.js",
+      "sourceMapTarget": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/bar.js",
+      "sourceMaps": false,
+      "sourceRoot": undefined,
+    },
+    "parserOpts": Object {
+      "plugins": Array [
+        "jsx",
+        "jsx",
+      ],
+      "sourceFileName": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/bar.js",
+      "sourceType": "module",
+    },
+    "passPerPreset": false,
+    "plugins": Array [
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "base$0",
+        "manipulateOptions": undefined,
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-react/lib/index.js$0",
+        "manipulateOptions": [Function],
+        "options": Object {
+          "pragma": "React.createElement",
+          "pragmaFrag": "React.Fragment",
+          "throwIfNamespace": true,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "JSXAttribute": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "JSXElement": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "JSXFragment": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "JSXNamespacedName": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": Object {},
+          "_verified": Object {},
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-react/lib/index.js$1",
+        "manipulateOptions": [Function],
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-react/lib/index.js$2",
+        "manipulateOptions": undefined,
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "CallExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportDefaultDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$0",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "Program": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$1",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DoWhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "WhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$2",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$3",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchCase": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$4",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DoWhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "VariableDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "WhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$5",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportDefaultDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$6",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$7",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "AssignmentExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportNamedDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "VariableDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$8",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$9",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$10",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "FunctionExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "ObjectProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$11",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "NumericLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "StringLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$12",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$13",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$14",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$15",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrayExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CallExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NewExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$16",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "RegExpLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$17",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": [Function],
+        "visitor": Object {
+          "TaggedTemplateExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TemplateLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$18",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BlockStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "CatchClause": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DoWhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForInStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForOfStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ForStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "SwitchStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "UnaryExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "WhileStatement": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$19",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "RegExpLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "transform-new-target",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "MetaProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "regenerator-transform",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "exit": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$22",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "AssignmentExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BinaryExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$23",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$24",
+        "manipulateOptions": undefined,
+        "options": Object {
+          "loose": false,
+          "spec": false,
+          "useBuiltIns": false,
+        },
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "RegExpLiteral": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": true,
+          "_verified": true,
+        },
+      },
+    ],
+    "presets": Array [],
+  },
+}
+`;
