@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-auto-css-modules",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Automatically import same name CSS modules.",
   "main": "lib/index.js",
   "files": [
@@ -43,7 +43,7 @@
     "codecov": "3.0.0",
     "flow-bin": "0.63.1",
     "jest-cli": "22.0.4",
-    "lintly": "0.0.16",
+    "lintly": "0.0.18",
     "nodely": "0.0.22"
   },
 

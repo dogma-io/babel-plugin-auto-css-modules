@@ -1,3 +1,7 @@
+## 0.0.5
+
+*   Upgrade lintly to latest version.
+
 ## 0.0.4
 
 *   Added tests.
