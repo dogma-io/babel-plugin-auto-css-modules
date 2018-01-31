@@ -194,6 +194,7 @@ global.foo = 'baz';",
       "plugins": Array [
         "jsx",
         "jsx",
+        "flow",
       ],
       "sourceFileName": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/foo.js",
       "sourceType": "module",
@@ -302,6 +303,351 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-flow/lib/index.js$0",
+        "manipulateOptions": [Function],
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "AnyTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ArrayTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "AssignmentPattern": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BooleanLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BooleanTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassImplements": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareClass": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareExportAllDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareExportDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareFunction": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareInterface": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareModule": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareModuleExports": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareOpaqueType": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareTypeAlias": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareVariable": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclaredPredicate": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "EmptyTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExistsTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportAllDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportDefaultDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportNamedDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionTypeParam": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "GenericTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ImportDeclaration": Object {
+            "enter": Array [
+              [Function],
+              [Function],
+            ],
+          },
+          "ImportSpecifier": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "InferredPredicate": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "InterfaceDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "InterfaceExtends": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "IntersectionTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "MixedTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NullLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NullableTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NumberLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NumberTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeCallProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeIndexer": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeSpreadProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "OpaqueType": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "QualifiedTypeIdentifier": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "StringLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "StringTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ThisTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TupleTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeAlias": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeCastExpression": Object {
+            "enter": Array [
+              [Function],
+              [Function],
+            ],
+          },
+          "TypeParameter": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeParameterDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeParameterInstantiation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeofTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "UnionTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Variance": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "VoidTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": Object {},
+          "_verified": Object {},
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
         "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$0",
         "manipulateOptions": undefined,
         "options": Object {
@@ -338,81 +684,6 @@ global.foo = 'baz';",
               [Function],
             ],
           },
-          "BlockStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "CatchClause": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ClassDeclaration": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ClassExpression": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ClassMethod": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "DoWhileStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ForInStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ForOfStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ForStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "FunctionDeclaration": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "FunctionExpression": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ObjectMethod": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "Program": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "SwitchStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "WhileStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
           "_exploded": true,
           "_verified": true,
         },
@@ -420,28 +691,6 @@ global.foo = 'baz';",
       Plugin {
         "generatorOverride": undefined,
         "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$2",
-        "manipulateOptions": undefined,
-        "options": Object {
-          "loose": false,
-          "spec": false,
-          "useBuiltIns": false,
-        },
-        "parserOverride": undefined,
-        "post": undefined,
-        "pre": undefined,
-        "visitor": Object {
-          "ArrowFunctionExpression": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "_exploded": true,
-          "_verified": true,
-        },
-      },
-      Plugin {
-        "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$3",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -468,7 +717,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$4",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$3",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -535,7 +784,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$5",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$4",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -567,7 +816,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$6",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$5",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -589,7 +838,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$7",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$6",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -636,7 +885,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$8",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$7",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -658,7 +907,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$9",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$8",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -680,7 +929,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$10",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$9",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -707,7 +956,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$11",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$10",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -734,7 +983,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$12",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$11",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -756,7 +1005,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$13",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$12",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -798,7 +1047,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$14",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$13",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -825,7 +1074,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$15",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$14",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -857,7 +1106,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$16",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$15",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -879,7 +1128,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$17",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$16",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -906,7 +1155,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$18",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$17",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1008,7 +1257,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$19",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$18",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1094,7 +1343,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$22",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$21",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1121,7 +1370,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$23",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$22",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1163,7 +1412,7 @@ global.foo = 'baz';",
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$24",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$23",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1353,6 +1602,7 @@ Object {
       "plugins": Array [
         "jsx",
         "jsx",
+        "flow",
       ],
       "sourceFileName": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/src/__tests__/fixtures/bar.js",
       "sourceType": "module",
@@ -1461,6 +1711,351 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-flow/lib/index.js$0",
+        "manipulateOptions": [Function],
+        "options": Object {},
+        "parserOverride": undefined,
+        "post": undefined,
+        "pre": undefined,
+        "visitor": Object {
+          "AnyTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ArrayTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ArrowFunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "AssignmentPattern": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BooleanLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "BooleanTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassImplements": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ClassProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareClass": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareExportAllDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareExportDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareFunction": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareInterface": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareModule": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareModuleExports": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareOpaqueType": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareTypeAlias": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclareVariable": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "DeclaredPredicate": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "EmptyTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExistsTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportAllDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportDefaultDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ExportNamedDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionExpression": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "FunctionTypeParam": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "GenericTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ImportDeclaration": Object {
+            "enter": Array [
+              [Function],
+              [Function],
+            ],
+          },
+          "ImportSpecifier": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "InferredPredicate": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "InterfaceDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "InterfaceExtends": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "IntersectionTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "MixedTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NullLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NullableTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NumberLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "NumberTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectMethod": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeCallProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeIndexer": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ObjectTypeSpreadProperty": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "OpaqueType": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Program": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "QualifiedTypeIdentifier": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "StringLiteralTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "StringTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "ThisTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TupleTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeAlias": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeCastExpression": Object {
+            "enter": Array [
+              [Function],
+              [Function],
+            ],
+          },
+          "TypeParameter": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeParameterDeclaration": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeParameterInstantiation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "TypeofTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "UnionTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "Variance": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "VoidTypeAnnotation": Object {
+            "enter": Array [
+              [Function],
+            ],
+          },
+          "_exploded": Object {},
+          "_verified": Object {},
+        },
+      },
+      Plugin {
+        "generatorOverride": undefined,
         "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$0",
         "manipulateOptions": undefined,
         "options": Object {
@@ -1497,81 +2092,6 @@ Object {
               [Function],
             ],
           },
-          "BlockStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "CatchClause": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ClassDeclaration": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ClassExpression": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ClassMethod": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "DoWhileStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ForInStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ForOfStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ForStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "FunctionDeclaration": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "FunctionExpression": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "ObjectMethod": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "Program": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "SwitchStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "WhileStatement": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
           "_exploded": true,
           "_verified": true,
         },
@@ -1579,28 +2099,6 @@ Object {
       Plugin {
         "generatorOverride": undefined,
         "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$2",
-        "manipulateOptions": undefined,
-        "options": Object {
-          "loose": false,
-          "spec": false,
-          "useBuiltIns": false,
-        },
-        "parserOverride": undefined,
-        "post": undefined,
-        "pre": undefined,
-        "visitor": Object {
-          "ArrowFunctionExpression": Object {
-            "enter": Array [
-              [Function],
-            ],
-          },
-          "_exploded": true,
-          "_verified": true,
-        },
-      },
-      Plugin {
-        "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$3",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1627,7 +2125,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$4",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$3",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1694,7 +2192,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$5",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$4",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1726,7 +2224,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$6",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$5",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1748,7 +2246,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$7",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$6",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1795,7 +2293,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$8",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$7",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1817,7 +2315,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$9",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$8",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1839,7 +2337,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$10",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$9",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1866,7 +2364,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$11",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$10",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1893,7 +2391,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$12",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$11",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1915,7 +2413,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$13",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$12",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1957,7 +2455,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$14",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$13",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -1984,7 +2482,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$15",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$14",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2016,7 +2514,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$16",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$15",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2038,7 +2536,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$17",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$16",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2065,7 +2563,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$18",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$17",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2167,7 +2665,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$19",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$18",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2253,7 +2751,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$22",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$21",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2280,7 +2778,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$23",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$22",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
@@ -2322,7 +2820,7 @@ Object {
       },
       Plugin {
         "generatorOverride": undefined,
-        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$24",
+        "key": "/Users/matthewdahl/github/babel-plugin-auto-css-modules/node_modules/@babel/preset-env/lib/index.js$23",
         "manipulateOptions": undefined,
         "options": Object {
           "loose": false,
