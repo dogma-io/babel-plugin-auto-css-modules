@@ -1,3 +1,7 @@
+/**
+ * @flow
+ */
+
 import {existsSync} from 'fs'
 import {basename, dirname, join} from 'path'
 
