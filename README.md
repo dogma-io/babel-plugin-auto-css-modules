@@ -2,6 +2,13 @@
 
 Automatically import same name CSS modules.
 
+## Table of Contents
+
+*   [Installation](#installation)
+*   [Documentation](#documentation)
+*   [Contributing](#contributing)
+*   [License](#license)
+
 ## Installation
 
 **npm**
@@ -17,7 +24,7 @@ yarn add babel-plugin-auto-css-modules
 ```
 
 
-## Usage
+## Documentation
 
 For any Javascript modules that you want corresponding CSS simply create a CSS file with the extension `.css` and the same name as your Javascript module in the same directory as your Javascript module. For example if you have a component at `foo/bar/Baz.js` your corresponding CSS would live at `foo/bar/Baz.css`.
 
@@ -39,6 +46,14 @@ module.exports = {
 This plugin will then automatically inject import statements into your Javascript modules to reference the CSS modules. Given the above example `foo/bar/Baz.js` would get `import "foo/bar/Baz.css"` at the top of the file.
 
 From here you'll need to configure your bundler of choice to handle CSS modules. If you're using Webpack I recommend [postcss-loader](https://github.com/postcss/postcss-loader).
+
+## Contributing
+
+Please see the [contributing guide](CONTRIBUTING.md).
+
+## License
+
+[MIT](LICENSE.md)
 
 [cov-img]: https://img.shields.io/codecov/c/github/dogma-io/babel-plugin-auto-css-modules.svg "Code Coverage"
 [cov-url]: https://codecov.io/gh/dogma-io/babel-plugin-auto-css-modules
