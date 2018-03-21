@@ -6,6 +6,7 @@ Automatically import same name CSS modules.
 
 *   [Installation](#installation)
 *   [Documentation](#documentation)
+*   [Code of Conduct](#code-of-conduct)
 *   [Contributing](#contributing)
 *   [License](#license)
 
@@ -46,6 +47,10 @@ module.exports = {
 This plugin will then automatically inject import statements into your Javascript modules to reference the CSS modules. Given the above example `foo/bar/Baz.js` would get `import "foo/bar/Baz.css"` at the top of the file.
 
 From here you'll need to configure your bundler of choice to handle CSS modules. If you're using Webpack I recommend [postcss-loader](https://github.com/postcss/postcss-loader).
+
+## Code of Conduct
+
+Please see the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Contributing
 
