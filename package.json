@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-auto-css-modules",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Automatically import same name CSS modules.",
   "main": "lib/index.js",
   "files": [
@@ -42,7 +42,6 @@
     "lintly": "0.1.0",
     "nodely": "0.1.0"
   },
-
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
