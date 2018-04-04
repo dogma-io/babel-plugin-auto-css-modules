@@ -1,3 +1,8 @@
+# 1.0.0 (2018-04-04)
+
+*   Added `engines` to `package.json` to set minimum Node version to 6.
+*   Publishing first major as project is now stable without any breaking changes in the foreseeable future.
+
 # 0.1.0 (2018-03-21)
 
 *   Update development dependencies to latest versions.
