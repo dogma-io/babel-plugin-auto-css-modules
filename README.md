@@ -44,9 +44,9 @@ module.exports = {
 }
 ```
 
-This plugin will then automatically inject import statements into your Javascript modules to reference the CSS modules. Given the above example `foo/bar/Baz.js` would get `import "foo/bar/Baz.css"` at the top of the file.
+This plugin will then automatically inject import statements into your Javascript modules to reference the CSS modules. Given the above example, `foo/bar/Baz.js` would get `import "foo/bar/Baz.css"` at the top of the file.
 
-From here you'll need to configure your bundler of choice to handle CSS modules. If you're using Webpack I recommend [postcss-loader](https://github.com/postcss/postcss-loader).
+From here you'll need to configure your bundler of choice to handle CSS modules. If you're using Webpack you may want to check out [postcss-loader](https://github.com/postcss/postcss-loader).
 
 ## Code of Conduct
 
