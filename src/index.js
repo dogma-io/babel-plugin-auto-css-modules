@@ -5,7 +5,8 @@
 import {existsSync} from 'fs'
 import {basename, dirname, join} from 'path'
 
-export default ({types: t, template}: *): * => {
+// eslint-disable-next-line flowtype/no-weak-types
+module.exports = ({types: t, template}: any): any => {
   return {
     visitor: {
       Program(path: *, state: *) {
