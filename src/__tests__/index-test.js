@@ -4,7 +4,7 @@ import {join} from 'path'
 function t(fileName) {
   const filePath = join(__dirname, 'fixtures', fileName)
   const options = {
-    plugins: [require('../../lib/').default],
+    plugins: [require('../../lib/')],
     presets: ['@babel/env', '@babel/react'],
   }
 
