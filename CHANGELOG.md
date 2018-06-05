@@ -1,3 +1,7 @@
+# 1.1.1 (2018-06-05)
+
+*   Make sure build is ES5.
+
 # 1.1.0 (2018-05-27)
 
 *  Add flow types to `lib` directory.
