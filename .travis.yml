@@ -7,22 +7,17 @@ node_js:
 
 sudo: false
 
-env:
-  global:
-    secure: siqesL49gbyMgNJd6TdI1A0FaQASRzsI5MfHZuY+nS1AEqVgE1RgSt5tpgSfPeoDSd4xIYAbhDF/2JP5wwVnlDip2hVGdKcEgOjIfV2wJKp0IMpqT2MSUW7UuUy9DHVJo0gdEtS5xhvmItJil0HkIKGNaP79WCpwQVJtPwGP4z/C+fDxOzIQIeK47HPXOv8M441A+gxSRHUdRwP7V8Hi50/JzGQkTy5MpTlfCxEESE6Q9ZzFH0FbBvP2OOcBZXdZnqn7ziuhgXqggTPzVAXx13QvUaE6dsKIBkjy+4fMiBBKqnhAAeEWKQHkWgs5kftJXdJEv0ACxYxYreh2ZkKMU+Wpm6+XRVZag2GlWini/erE5+yDUDPFRMu+bfKeF971x9rjHyjF7a63yzzXbgIjs5yqmX+4DBxQbnmqacCOmpbuNJ8Ns1d3vC/nsQBhex+MH6lo1qBTkl3jaHtNu2hNqhl39172lzQevX9NTJTpHV/1DF8CFsGXfw2DhlvYoZlHjKsjfdA9Y4prQB9Nk5KNkltppIUEwLeWP4dn3xF4x47/tdIV+qgdWHvr7Wh97MDsOKHh3eVySMQakNYS0/TVasUtxRdevlcJjTGTmXG/nEJ+Q5dP9LOzjAfhwhJn9LP9Dy1QmnxxOJ+lISM0UK17v7d5TmmUHmU8M31eSy53ziE=
-
 before_install:
-  - npm install -g pr-bumper@^3.0.0
+  - npm install -g bumpr@^2.7.2
 
 install:
   - yarn install
 
 before_script:
-  - $(npm root -g)/pr-bumper/.travis/maybe-check-scope.sh
+  - yarn run bumpr check
 
 script:
-  - $(npm root -g)/pr-bumper/.travis/maybe-test.sh
-  - $(npm root -g)/pr-bumper/.travis/maybe-bump-version.sh
+  - yarn run bumpr is-pr && yarn test
 
 deploy:
   provider: npm
